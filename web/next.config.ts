@@ -1,6 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+    // ensure Next produces server-side output so app-router API routes are deployed on Vercel
+    output: "standalone",
     images: {
         remotePatterns: [
             {
