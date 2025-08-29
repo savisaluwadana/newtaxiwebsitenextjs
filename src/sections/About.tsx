@@ -24,17 +24,17 @@ const AboutUs: React.FC = () => {
 
             <div className="container mx-auto px-6 relative z-10">
                 <TopSection
-                                title="About taxi thissamaharama"
+                                title="About Taxi Tissamaharama"
                     description="We provide reliable and comfortable transportation services across Sri Lanka, connecting travelers with professional drivers for a seamless journey experience."
-                                highlightWord="taxi thissamaharama"
-                                popupTitle="About taxi thissamaharama: Your Premier Transportation Partner in Sri Lanka"
+                    highlightWord="Taxi Tissamaharama"
+                    popupTitle="About Taxi Tissamaharama: Your Premier Transportation Partner in Sri Lanka"
                     paragraph={
                         <div className="flex flex-col gap-4 text-gray-300">
                             <p>
-                                            At taxi thissamaharama, we are dedicated to redefining your travel experience across the beautiful
-                                island of Sri Lanka. As a leading transportation service, TakeMeLK specializes in
+                                            At Taxi Tissamaharama, we are dedicated to redefining your travel experience across the beautiful
+                                island of Sri Lanka. As a leading transportation service, Taxi Tissamaharama specializes in
                                             providing reliable, comfortable, and safe journeys for both local and international
-                                travelers. Our mission at TakeMeLK is to seamlessly connect you with a network of highly
+                                travelers. Our mission at Taxi Tissamaharama is to seamlessly connect you with a network of highly
                                 professional, experienced, and courteous drivers, ensuring every trip is not just a
                                 ride, but a part of your unforgettable Sri Lankan adventure.
                             </p>
@@ -42,18 +42,18 @@ const AboutUs: React.FC = () => {
                                 From the bustling streets of Colombo to the serene beaches of Mirissa, the cultural
                                 heartland of Kandy, and the ancient cities of Sigiriya and Anuradhapura, TakeMeLK covers
                                             every corner of Sri Lanka. We understand that efficient and hassle-free transportation
-                                is crucial for a truly enjoyable trip, which is why TakeMeLK offers a diverse fleet of
+                                is crucial for a truly enjoyable trip, which is why Taxi Tissamaharama offers a diverse fleet of
                                 well-maintained vehicles to suit every need and group size – from comfortable sedans for
                                 solo explorers or couples, to spacious vans for families and tour groups.
                             </p>
                             <p>
-                                            Choosing taxi thissamaharama means opting for peace of mind. We prioritize your safety and
+                                            Choosing Taxi Tissamaharama means opting for peace of mind. We prioritize your safety and
                                 satisfaction above all else. Our advanced booking system makes planning your journeys
-                                effortless, allowing you to secure your transportation with TakeMeLK well in advance.
+                                effortless, allowing you to secure your transportation with Taxi Tissamaharama well in advance.
                                 Whether you require airport transfers, inter-city travel, bespoke tour packages, or
-                                daily commutes, TakeMeLK is your trusted partner for a seamless journey experience.
-                                            Discover the true essence of Sri Lanka with taxi thissamaharama – where reliability meets comfort,
-                                and every mile is a pleasure. Experience the difference with TakeMeLK and let us take
+                                daily commutes, Taxi Tissamaharama is your trusted partner for a seamless journey experience.
+                                            Discover the true essence of Sri Lanka with Taxi Tissamaharama – where reliability meets comfort,
+                                and every mile is a pleasure. Experience the difference with Taxi Tissamaharama and let us take
                                 you on an incredible journey.
                             </p>
                         </div>
@@ -84,7 +84,7 @@ const AboutUs: React.FC = () => {
                         <SectionHeading title="Why Choose Us" className="text-white mb-6"/>
 
                         <p className="text-gray-300 mb-8 leading-relaxed">
-                                        At taxi thissamaharama, we take pride in delivering exceptional transportation services with a focus on
+                                        At Taxi Tissamaharama, we take pride in delivering exceptional transportation services with a focus on
                             reliability,
                             comfort, and customer satisfaction. Our team of experienced drivers knows every corner of
                             Sri Lanka,

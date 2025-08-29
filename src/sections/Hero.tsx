@@ -28,7 +28,7 @@ const Hero: React.FC = () => {
             <div className="relative z-10 pt-[12rem] md:pt-[14rem] px-[1rem] pb-[3rem] md:absolute gap-[2rem] md:gap-[15rem] flex md:flex-row flex-col w-full h-full md:p-[4rem] md:justify-between justify-center items-center flex-shrink-0">
                 <div className="flex w-full md:w-[50%] flex-col items-center md:items-start flex-shrink-0 animate-fade-in-luxury">
                     <h1 className="text-center md:text-left text-[2.5rem] md:text-[4rem] text-white font-semibold leading-tight mb-6 text-luxury">
-                        taxi thissamaharama Book a{' '}
+                       Taxi Tissamaharama Book a{' '}
                         <span className="text-gradient font-kalam text-[2.5rem] md:text-[4rem] font-bold leading-tight bg-gradient-to-r from-red-400 to-red-600 bg-clip-text text-transparent">
                             Ride
                         </span>{' '}

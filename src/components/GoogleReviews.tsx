@@ -94,9 +94,9 @@ export default function GoogleReviews() {
     if (error) return <p className="text-red-500 text-center py-8">Error: {error}</p>
 
     return (
-        <section className="py-8 sm:py-16 max-w-sm md:max-w-5xl mx-auto rounded-2xl shadow-lg relative overflow-hidden">
+        <section className="py-6 sm:py-12 w-full mx-auto relative">
             {/* The outer container handles the consistent padding for all screen sizes */}
-            <div className="mx-auto max-w-5xl px-3 sm:px-4">
+            <div className="mx-auto px-3 sm:px-4 w-full">
                 {/*<SectionHeading title="Customer Reviews" />*/}
 
                 {/*<p className="text-gray-600 max-w-2xl mx-auto text-center mb-6 sm:mb-10 px-2 text-sm sm:text-base">*/}
@@ -132,15 +132,15 @@ export default function GoogleReviews() {
                     </button>
 
                     {/* The overflow container now gets margin on desktop to make space for the buttons */}
-                    <div className="overflow-hidden mx-2 md:mx-16">
+                    <div className="overflow-hidden w-full">
                         <div
-                            className="flex transition-transform duration-500"
+                            className="flex transition-transform duration-500 w-full"
                             style={{ transform: `translateX(-${currentIndex * 100}%)` }}
                         >
                             {reviews.map((review, index) => (
                                 <div
                                     key={index}
-                                    className="w-full flex-shrink-0 bg-white rounded-2xl transition-all duration-300 flex flex-col"
+                                    className="w-full flex-shrink-0 bg-white/5 backdrop-blur-sm rounded-2xl transition-all duration-300 flex flex-col p-4 md:p-6"
                                 >
                                     <div className="flex items-start mb-4">
                                         {review.profile_photo_url && (
@@ -156,17 +156,17 @@ export default function GoogleReviews() {
                                         )}
 
                                         <div className="min-w-0 flex-1">
-                                            <h3 className="font-bold text-base sm:text-lg break-words line-clamp-1">{review.author_name}</h3>
-                                            <div className="flex flex-wrap items-center">
+                                            <h3 className="font-bold text-base sm:text-lg break-words">{review.author_name}</h3>
+                                            <div className="flex flex-wrap items-center text-sm">
                                                 <div className="text-yellow-400 mr-2">
                                                     {Array.from({ length: 5 }).map((_, i) => (
-                                                        <span key={i} className="text-sm sm:text-xl">
-                              {i < review.rating ? "★" : "☆"}
+                                                        <span key={i} className="text-sm">
+                              {i < review.rating ? "\u2605" : "\u2606"}
                             </span>
                                                     ))}
                                                 </div>
                                                 {review.relative_time_description && (
-                                                    <span className="text-xs sm:text-sm text-gray-500">{review.relative_time_description}</span>
+                                                    <span className="text-xs sm:text-sm text-gray-300">{review.relative_time_description}</span>
                                                 )}
                                             </div>
                                         </div>
@@ -174,7 +174,7 @@ export default function GoogleReviews() {
 
                                     <div className="relative pl-3 sm:pl-4">
                                         <div className="absolute left-0 top-0 h-fit w-1 bg-[#93F0BD] rounded"></div>
-                                        <p className="text-sm sm:text-base text-gray-700 italic line-clamp-6 sm:line-clamp-none">
+                                        <p className="text-sm sm:text-base text-gray-200 italic">
                                             {review.text}
                                         </p>
                                     </div>

@@ -7,7 +7,7 @@ import Image from "next/image";
 
 const Reviews: React.FC = () => {
     return (
-        <section id="reviews" className="py-20 relative overflow-hidden mx-auto">
+    <section id="reviews" className="py-12 sm:py-20 relative overflow-hidden mx-auto">
             {/* Luxury background */}
             <div className="absolute inset-0 gradient-primary">
                 <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-red-500 to-transparent"></div>
@@ -17,7 +17,7 @@ const Reviews: React.FC = () => {
             </div>
 
             {/* Content Container */}
-            <div className="container mx-auto px-6 relative z-10">
+            <div className="container mx-auto px-4 sm:px-6 relative z-10">
                 {/* Section Header */}
                 <div className="mb-12">
                     <TopSection
@@ -51,7 +51,7 @@ const Reviews: React.FC = () => {
                 </div>
 
                 {/* Reviews Container */}
-                <div className="glass-card max-w-sm md:max-w-full rounded-2xl shadow-luxury p-6 md:p-8 mb-12 relative border border-white/10">
+                <div className="glass-card w-full rounded-2xl shadow-luxury p-4 md:p-8 mb-8 relative border border-white/10">
                     {/* Luxury accent element */}
                     <div className="absolute top-0 left-0 h-full w-1 bg-gradient-to-b from-red-500 to-red-400 rounded-full"></div>
 

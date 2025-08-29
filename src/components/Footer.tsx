@@ -7,20 +7,19 @@ import Image from "next/image";
 
 const Footer: React.FC = () => {
     return (
-        <div className="w-full cursor-default p-8 pb-0 glass-card border-t border-white/10">
-            <div className="flex md:flex-row flex-col gap-8 md:gap-16 p-8 justify-between items-center self-stretch">
+        <div className="w-full cursor-default p-6 sm:p-8 pb-0 glass-card border-t border-white/10">
+            <div className="flex flex-col md:flex-row gap-6 md:gap-16 p-4 md:p-8 justify-between items-center">
                 {/* Logo and Company Name */}
-                <div className="flex flex-col items-center justify-center text-center">
+        <div className="flex flex-col items-center justify-center text-center md:text-left">
                     <Image src={img.src} alt="taxi thissamaharama" width={80} height={80} className="hover-lift" />
                     <p className="text-white font-inter text-[1.2rem] font-semibold mt-4">
-                        <span className="text-gradient font-bold">taxi thissamaharama</span>
-                        <br/>
-                        <span className="text-gray-300 text-lg">Taxi Tissamaharama</span>
+                
+            <span className="text-gray-300 text-lg">Taxi Tissamaharama</span>
                     </p>
                 </div>
 
                 {/* Description */}
-                <p className="w-full md:w-[40%] text-gray-300 text-center font-inter text-[1rem] font-normal leading-relaxed">
+                <p className="w-full md:w-[40%] text-gray-300 text-center md:text-left font-inter text-[1rem] font-normal leading-relaxed max-w-xl">
                     Reliable, affordable, and always on time!<br/>
                     We provide safe and comfortable rides 24/7, whether
                     you need a quick city trip, airport transfer, or long-distance travel. Book your ride today and

@@ -52,14 +52,14 @@ const ContactUs: React.FC = () => {
 
             <div className="container mx-auto px-6 md:px-48 relative z-10">
                 <TopSection
-                    title="Contact taxi thissamaharama"
+                    title="Contact Taxi Tissamaharama"
                     description="Ready to book a ride or have questions about our services? Reach out to us today and experience our exceptional customer service."
                     highlightWord="Contact"
-                    popupTitle="Get in Touch with taxi thissamaharama for Seamless Travel"
-                    paragraph="Whether you're planning an airport transfer, an inter-city trip, a scenic tour, or simply need dependable daily transportation, the taxi thissamaharama team is here to help. Contacting taxi thissamaharama is the first step towards a stress-free and enjoyable journey throughout Sri Lanka. Experience the convenience and professionalism that sets taxi thissamaharama apart. We look forward to hearing from you and helping you plan your perfect travel experience."
+                    popupTitle="Get in Touch with Taxi Tissamaharama for Seamless Travel"
+                    paragraph="Whether you're planning an airport transfer, an inter-city trip, a scenic tour, or simply need dependable daily transportation, the Taxi Tissamaharama team is here to help. Contacting Taxi Tissamaharama is the first step towards a stress-free and enjoyable journey throughout Sri Lanka. Experience the convenience and professionalism that sets Taxi Tissamaharama apart. We look forward to hearing from you and helping you plan your perfect travel experience."
                 />
 
-                <div className="mt-16 grid grid-cols-1 lg:grid-cols-5 gap-8">
+                <div className="mt-12 grid grid-cols-1 lg:grid-cols-5 gap-6">
                     {/* Contact Information */}
                     <div className="glass-card rounded-2xl shadow-luxury p-8 lg:col-span-2 animate-fade-in-luxury border border-white/10">
                         <SectionHeading title="Get In Touch" className="text-white mb-6"/>
@@ -116,7 +116,7 @@ const ContactUs: React.FC = () => {
                     </div>
 
                     {/* Contact Form */}
-                    <div className="glass-card rounded-2xl shadow-luxury p-8 lg:col-span-3 animate-slide-in-luxury border border-white/10"
+                    <div className="glass-card rounded-2xl shadow-luxury p-6 lg:col-span-3 animate-slide-in-luxury border border-white/10"
                          style={{animationDelay: "200ms"}}>
                         <SectionHeading title="Send Us a Message" className="text-white mb-6"/>
 

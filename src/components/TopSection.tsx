@@ -27,19 +27,19 @@ const TopSection: React.FC<ServiceProps> = ({ title, description, highlightWord,
 
     return (
         <section>
-            <div className="flex md:p-[3.125rem_0.625rem] justify-center items-start self-stretch">
-                <div className="flex md:p-[0rem_6.9375rem] flex-col justify-center items-center md:gap-[2rem] self-stretch">
-                    <h2 className="text-white font-inter text-[3rem] md:text-[5rem] text-center text-normal font-semibold leading-tight text-luxury">
+            <div className="flex justify-center items-start px-6 md:px-12 lg:px-24">
+                <div className="flex flex-col justify-center items-center gap-6 max-w-4xl text-center">
+                    <h2 className="text-white font-inter text-3xl md:text-5xl text-center font-semibold leading-tight text-luxury">
                         {renderTitle()}
                     </h2>
-                    <p className="text-gray-300 font-inter text-[1.2rem] font-normal leading-relaxed text-center w-[80vw] md:w-[60vw]">
+                    <p className="text-gray-300 font-inter text-base md:text-lg font-normal leading-relaxed max-w-xl md:max-w-3xl">
                         {description}
                     </p>
 
                     {/* Luxury Learn More button */}
                     <button
                         onClick={() => setIsPopupOpen(true)}
-                        className="mt-8 px-8 py-3 glass-premium text-white font-semibold rounded-xl border border-red-400/50 hover:border-red-400 hover:bg-red-400/10 transition-all duration-300 hover-lift"
+                        className="mt-6 px-6 py-2 glass-premium text-white font-semibold rounded-xl border border-red-400/50 hover:border-red-400 hover:bg-red-400/10 transition-all duration-300 hover-lift"
                     >
                         Learn More
                     </button>
