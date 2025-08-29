@@ -1,0 +1,225 @@
+@import "@fontsource/inter";
+@import "@fontsource/kalam";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --background: #000000;
+    --foreground: #ffffff;
+    --accent: #dc2626;
+    --accent-2: #ef4444;
+    --accent-light: #fca5a5;
+    --surface: #1a1a1a;
+    --surface-light: #2a2a2a;
+    --text-secondary: #a3a3a3;
+}
+
+* {
+    user-select: none;
+}
+
+body {
+    color: var(--foreground);
+    background: var(--background);
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+}
+
+/* Premium gradient backgrounds */
+.gradient-primary {
+    background: linear-gradient(135deg, #000000 0%, #1a1a1a 50%, #000000 100%);
+}
+
+.gradient-accent {
+    background: linear-gradient(135deg, var(--accent) 0%, var(--accent-2) 100%);
+}
+
+.gradient-surface {
+    background: linear-gradient(135deg, var(--surface) 0%, var(--surface-light) 100%);
+}
+
+/* Glassmorphism effects */
+.glass-premium {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.glass-card {
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Luxury shadows */
+.shadow-luxury {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(255, 255, 255, 0.05);
+}
+
+.shadow-luxury-hover {
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(220, 38, 38, 0.2);
+}
+
+/* Typography enhancements */
+.text-luxury {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.text-gradient {
+    background: linear-gradient(135deg, #ffffff 0%, #a3a3a3 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Animation enhancements */
+@keyframes fadeInLuxury {
+    from {
+        opacity: 0;
+        transform: translateY(30px) scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes slideInLuxury {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes pulseLuxury {
+    0%, 100% {
+        box-shadow: 0 0 0 0 rgba(220, 38, 38, 0.4);
+    }
+    50% {
+        box-shadow: 0 0 0 10px rgba(220, 38, 38, 0);
+    }
+}
+
+@keyframes formAnimateIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes formAnimateOut {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes scaleOut {
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+    to {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+}
+
+.animate-fade-in-luxury {
+    animation: fadeInLuxury 0.8s ease-out forwards;
+    opacity: 0;
+}
+
+.animate-slide-in-luxury {
+    animation: slideInLuxury 0.6s ease-out forwards;
+    opacity: 0;
+}
+
+.animate-pulse-luxury {
+    animation: pulseLuxury 2s infinite;
+}
+
+.form-animate-in {
+    animation: formAnimateIn 0.5s ease-out forwards;
+}
+
+.form-animate-out {
+    animation: formAnimateOut 0.3s ease-in forwards;
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.3s ease-out forwards;
+}
+
+.animate-fade-out {
+    animation: fadeOut 0.3s ease-in forwards;
+}
+
+.animate-scale-in {
+    animation: scaleIn 0.3s ease-out forwards;
+}
+
+.animate-scale-out {
+    animation: scaleOut 0.3s ease-in forwards;
+}
+
+/* Hover effects */
+.hover-lift {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover-lift:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--surface);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--accent);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-2);
+}
